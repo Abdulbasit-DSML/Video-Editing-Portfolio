@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Muhammad Faaiz | Video Editor</title>
-<meta name="description" content="Portfolio of Muhammad Faaiz, video editor: Shorts and long-form video edits.">
+<title>Faaiz.Shoik | Video Editor</title>
+<meta name="description" content="Portfolio of Faaiz.Shoik, video editor: Shorts and long-form video edits.">
 <meta name="theme-color" content="#1D4ED8">
 <meta name="referrer" content="strict-origin-when-cross-origin">
-<meta property="og:title" content="Muhammad Faaiz | Video Editor">
+<meta property="og:title" content="Faaiz.Shoik | Video Editor">
 <meta property="og:description" content="Video editor with 1 year of experience in Shorts and long-form content. View my work and get in touch.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E">
@@ -64,20 +64,6 @@ a{color:inherit}
 .btn.primary:hover{background:var(--blue-dark)}
 .btn.ghost{background:#fff;color:var(--blue);border:1.5px solid var(--blue-soft)}
 .btn.ghost:hover{border-color:var(--blue)}
-
-/* timeline */
-.timeline{position:relative;margin-top:56px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:18px 18px 18px 58px;overflow:hidden}
-.track{position:relative;height:32px;margin:8px 0}
-.track::before{content:attr(data-label);position:absolute;left:-44px;top:0;height:100%;display:flex;align-items:center;font-family:var(--display);font-size:12px;font-weight:700;color:var(--muted)}
-.clip{position:absolute;top:0;height:100%;display:flex;align-items:center;padding:0 10px;font-size:12px;font-weight:600;white-space:nowrap;overflow:hidden;border-radius:6px}
-.clip.a{background:var(--blue);color:#fff}
-.clip.b{background:var(--sky);color:#fff}
-.clip.c{background:var(--blue-soft);color:var(--blue-dark)}
-.clip.d{background:var(--ink);color:#fff}
-.playhead{position:absolute;top:0;bottom:0;width:2px;left:58px;background:#E5484D;animation:sweep 5s cubic-bezier(.5,0,.3,1) .5s forwards}
-.playhead::before{content:"";position:absolute;top:0;left:-5px;border:6px solid transparent;border-top:9px solid #E5484D;border-bottom:0}
-@keyframes sweep{to{left:calc(100% - 36px)}}
-@media(max-width:560px){.timeline{padding-left:48px}.track::before{left:-38px}}
 
 /* sections */
 section{padding:52px 0 0}
@@ -167,13 +153,24 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 .wa-btn svg{width:34px;height:34px;fill:#fff}
 .wa-btn::before{content:"";position:absolute;inset:0;border-radius:50%;background:#25D366;opacity:.5;z-index:-1;animation:wapulse 2.2s ease-out infinite}
 @keyframes wapulse{from{transform:scale(1);opacity:.5}to{transform:scale(1.7);opacity:0}}
+
+/* profile picture */
+.avatar{position:relative;width:210px;height:210px;border-radius:50%;overflow:hidden;margin-bottom:20px;background:linear-gradient(135deg,var(--blue),var(--blue-dark));border:4px solid #fff;box-shadow:0 0 0 3px var(--blue),var(--shadow);display:grid;place-items:center}
+.avatar span{font-family:var(--display);font-weight:800;font-size:68px;color:#fff;letter-spacing:.02em}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media(max-width:560px){.avatar{width:170px;height:170px}.avatar span{font-size:56px}}
+
+/* centered hero */
+.hero .wrap{display:flex;flex-direction:column;align-items:center;text-align:center}
+.hero .avatar{margin:0 0 18px}
+.hero .btns{justify-content:center}
 </style>
 </head>
 <body>
 
 <div class="bar">
   <div class="wrap">
-    <a class="brand" href="#top"><i></i>Muhammad Faaiz</a>
+    <a class="brand" href="#top"><i></i>Faaiz.Shoik</a>
     <ul>
       <li class="hide-s"><a href="#services">Services</a></li>
       <li><a href="#work">Work</a></li>
@@ -185,8 +182,9 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 
 <header class="hero" id="top">
   <div class="wrap">
+    <div class="avatar"><span>FS</span><img src="profile.jpg" alt="Faaiz.Shoik" onerror="this.remove()"></div>
     <span class="status"><b></b>Available for new projects</span>
-    <h1>Muhammad <span>Faaiz</span></h1>
+    <h1>Faaiz.<span>Shoik</span></h1>
     <p class="role">Video Editor</p>
     <p class="lede">Video editor with 1 year of hands-on experience in short-form and long-form content for YouTube and social media. I turn raw footage into polished, engaging videos with strong hooks, precise cuts, clean audio and captions that keep viewers watching to the end.</p>
     <div class="btns">
@@ -249,7 +247,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
       </div>
       <div class="about">
         <div>
-          <p>I'm Muhammad Faaiz, a video editor who builds every edit around the viewer's attention: a strong first three seconds, steady pacing, and sound that supports the picture.</p>
+          <p>I'm Faaiz.Shoik, a video editor who builds every edit around the viewer's attention: a strong first three seconds, steady pacing, and sound that supports the picture.</p>
           <p>I have 1 year of experience editing for YouTube and short-form platforms, from single Shorts to regular channel uploads. My workflow covers cutting and pacing, B-roll, color correction, sound cleanup, motion graphics and captions.</p>
           <p>I communicate clearly, work to agreed deadlines and revise the edit until the final cut matches your vision.</p>
         </div>
@@ -293,13 +291,13 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
 
 <footer>
   <div class="wrap">
-    <span>&copy; 2026 Muhammad Faaiz. All rights reserved.</span>
+    <span>&copy; 2026 Faaiz.Shoik. All rights reserved.</span>
     <a href="#top">Back to top</a>
   </div>
 </footer>
 
 <div class="wa">
-    <a class="wa-btn" href="https://wa.me/923003014920?text=Hi%20Muhammad%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20a%20video%20edited." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
+    <a class="wa-btn" href="https://wa.me/923003014920?text=Hi%20Faaiz%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20a%20video%20edited." target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></a>
 </div>
 
 <script>
